@@ -1,0 +1,28 @@
+{
+  "name": "api_spotify",
+  "version": "1.0.0",
+  "description": "Desarrollando Aplicacion Spotify",
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mssql": "^4.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsarmiento1614/API_Spotify.git"
+  },
+  "author": "JSarmiento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsarmiento1614/API_Spotify/issues"
+  },
+  "homepage": "https://github.com/jsarmiento1614/API_Spotify#readme"
+}
