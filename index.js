@@ -58,7 +58,7 @@ app.get('/v1/search', (req, res, next) =>{
 
     // Ejecuto la consulta a la base de datos
     sql.connect(sqlconfig).then(() => {
-        return sql.query(`select dbo.Artists.ArtistName,dbo.Genres.GenreName,Songs.CoverUrl, Songs.SongTittle, Songs.SongLength from dbo.Artists,dbo.Genres, dbo.Songs where SongTittle = '${q}';`);
+        return sql.query(`select TOP (${limit}) dbo.Artists.ArtistName,dbo.Genres.GenreName,Songs.CoverUrl, Songs.SongTittle, Songs.SongLength from dbo.Artists,dbo.Genres, dbo.Songs where SongTittle = '${q}';`);
     }).then(result => {
         var data = {
             seccess: true,
